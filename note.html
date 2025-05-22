@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>Python 內建函式說明</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2 {
+      color: #005f99;
+    }
+    .function {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 15px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+    }
+    code {
+      background-color: #f0f0f0;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Python 內建函式說明</h1>
+  
+  <div class="function"><h2>abs(x)</h2><p>傳回數值 x 的絕對值。</p></div>
+  <div class="function"><h2>all(iterable)</h2><p>若 iterable 中所有元素皆為 True，則回傳 True。</p></div>
+  <div class="function"><h2>any(iterable)</h2><p>若 iterable 中任一元素為 True，則回傳 True。</p></div>
+  <div class="function"><h2>ascii(object)</h2><p>類似 repr()，但會將非 ASCII 字元轉義。</p></div>
+  <div class="function"><h2>bin(x)</h2><p>將整數轉換為二進位字串。</p></div>
+  <div class="function"><h2>bool(x)</h2><p>將 x 轉換為布林值。</p></div>
+  <div class="function"><h2>breakpoint()</h2><p>插入除錯中斷點。</p></div>
+  <div class="function"><h2>bytearray([source[, encoding[, errors]]])</h2><p>建立一個可變的 bytes 陣列。</p></div>
+  <div class="function"><h2>bytes([source[, encoding[, errors]]])</h2><p>建立一個不可變的 bytes 物件。</p></div>
+  <div class="function"><h2>callable(object)</h2><p>檢查物件是否可被呼叫。</p></div>
+  <div class="function"><h2>chr(i)</h2><p>將整數轉換為 Unicode 字元。</p></div>
+  <div class="function"><h2>classmethod(function)</h2><p>轉換方法為類別方法。</p></div>
+  <div class="function"><h2>compile(source, filename, mode)</h2><p>將程式碼字串編譯成程式碼物件。</p></div>
+  <div class="function"><h2>complex([real[, imag]])</h2><p>建立一個複數。</p></div>
+  <div class="function"><h2>delattr(object, name)</h2><p>刪除物件的屬性。</p></div>
+  <div class="function"><h2>dict()</h2><p>建立字典。</p></div>
+  <div class="function"><h2>dir([object])</h2><p>列出物件的屬性與方法。</p></div>
+  <div class="function"><h2>divmod(a, b)</h2><p>回傳整除與餘數的元組。</p></div>
+  <div class="function"><h2>enumerate(iterable, start=0)</h2><p>將 iterable 包裝成 (index, value) 的迭代器。</p></div>
+  <div class="function"><h2>eval(expression)</h2><p>執行表示式並回傳結果（⚠️ 小心安全性）。</p></div>
+  <div class="function"><h2>exec(object)</h2><p>執行程式碼字串或物件。</p></div>
+  <div class="function"><h2>filter(function, iterable)</h2><p>過濾 iterable 中符合條件的元素。</p></div>
+  <div class="function"><h2>float([x])</h2><p>轉換為浮點數。</p></div>
+  <div class="function"><h2>format(value[, format_spec])</h2><p>格式化數值。</p></div>
+  <div class="function"><h2>frozenset([iterable])</h2><p>建立不可變集合。</p></div>
+  <div class="function"><h2>getattr(object, name[, default])</h2><p>取得物件屬性。</p></div>
+  <div class="function"><h2>globals()</h2><p>回傳目前的全域符號表。</p></div>
+  <div class="function"><h2>hasattr(object, name)</h2><p>檢查物件是否有指定屬性。</p></div>
+  <div class="function"><h2>hash(object)</h2><p>回傳物件的雜湊值。</p></div>
+  <div class="function"><h2>help([object])</h2><p>啟動內建說明系統。</p></div>
+  <div class="function"><h2>hex(x)</h2><p>將整數轉換為十六進位字串。</p></div>
+  <div class="function"><h2>id(object)</h2><p>回傳物件的唯一識別碼。</p></div>
+  <div class="function"><h2>input([prompt])</h2><p>讀取使用者輸入。</p></div>
+  <div class="function"><h2>int([x[, base]])</h2><p>轉換為整數。</p></div>
+  <div class="function"><h2>isinstance(object, classinfo)</h2><p>檢查是否為指定類別的實例。</p></div>
+  <div class="function"><h2>issubclass(class, classinfo)</h2><p>檢查是否為子類別。</p></div>
+  <div class="function"><h2>iter(object[, sentinel])</h2><p>取得物件的迭代器。</p></div>
+  <div class="function"><h2>len(s)</h2><p>回傳容器中元素的數量。</p></div>
+  <div class="function"><h2>list([iterable])</h2><p>建立列表。</p></div>
+  <div class="function"><h2>locals()</h2><p>回傳目前的區域符號表。</p></div>
+  <div class="function"><h2>map(function, iterable)</h2><p>對 iterable 中每個元素套用 function。</p></div>
+  <div class="function"><h2>max(iterable, *[, key, default])</h2><p>回傳最大值。</p></div>
+  <div class="function"><h2>min(iterable, *[, key, default])</h2><p>回傳最小值。</p></div>
+  <div class="function"><h2>next(iterator[, default])</h2><p>取得迭代器的下一項。</p></div>
+  <div class="function"><h2>object()</h2><p>回傳一個新的基本物件。</p></div>
+  <div class="function"><h2>oct(x)</h2><p>將整數轉換為八進位字串。</p></div>
+  <div class="function"><h2>open(file, mode='r')</h2><p>開啟檔案。</p></div>
+  <div class="function"><h2>ord(c)</h2><p>回傳字元對應的 Unicode 編碼。</p></div>
+  <div class="function"><h2>pow(x, y[, z])</h2><p>計算 x 的 y 次方。</p></div>
+  <div class="function"><h2>print(*objects)</h2><p>輸出到標準輸出。</p></div>
+  <div class="function"><h2>property(fget=None, fset=None, fdel=None)</h2><p>建立屬性存取介面。</p></div>
+  <div class="function"><h2>range([start,] stop[, step])</h2><p>建立數值序列。</p></div>
+  <div class="function"><h2>repr(object)</h2><p>回傳物件的字串表示。</p></div>
+  <div class="function"><h2>reversed(seq)</h2><p>反轉序列。</p></div>
+  <div class="function"><h2>round(number[, ndigits])</h2><p>四捨五入數值。</p></div>
+  <div class="function"><h2>set([iterable])</h2><p>建立集合。</p></div>
+  <div class="function"><h2>setattr(object, name, value)</h2><p>設定物件的屬性。</p></div>
+  <div class="function"><h2>slice(start, stop[, step])</h2><p>建立切片物件。</p></div>
+  <div class="function"><h2>sorted(iterable[, key][, reverse])</h2><p>回傳排序後的列表。</p></div>
+  <div class="function"><h2>staticmethod(function)</h2><p>定義靜態方法。</p></div>
+  <div class="function"><h2>str([object])</h2><p>轉換為字串。</p></div>
+  <div class="function"><h2>sum(iterable[, start])</h2><p>總和。</p></div>
+  <div class="function"><h2>super([type[, object]])</h2><p>取得父類別的方法。</p></div>
+  <div class="function"><h2>tuple([iterable])</h2><p>建立元組。</p></div>
+  <div class="function"><h2>type(object)</h2><p>回傳物件型別。</p></div>
+  <div class="function"><h2>vars([object])</h2><p>回傳物件的屬性字典。</p></div>
+  <div class="function"><h2>zip(*iterables)</h2><p>將多個 iterable 串接成對。</p></div>
+  <div class="function"><h2>__import__(name)</h2><p>內部使用的匯入函式。</p></div>
+</body>
+</html>
